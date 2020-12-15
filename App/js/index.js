@@ -93,10 +93,12 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel5.append(
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image13")
-                .setLeft("20.571428571428573em")
-                .setTop("3.8095238095238093em")
-                .setWidth("25.752380952380953em")
+                .setLeft("25.447619047619046em")
+                .setTop("2.5904761904761906em")
+                .setWidth("19.2em")
+                .setHeight("4.876190476190477em")
                 .setSrc("{/}img/costume2 (14).png")
+                .onDblclick("_xui_ui_image13_ondblclick")
             );
             
             append(
@@ -131,6 +133,16 @@ xui.Class('App', 'xui.Module',{
         customAppend : function(parent, subId, left, top){
             // "return false" will cause all the internal UI controls will be added to the parent panel
             return false;
+        },
+        /**
+         * Fired when image is dblclicked
+         * @method onDblclick [xui.UI.Image event]
+         * @param {xui.UIProfile.} profile  The current control's profile object
+         * @param {Event} e , Dom event object
+         * @param {Element.xui} src  id or Dom Element
+        */
+        _xui_ui_image13_ondblclick:function(profile, e, src){
+            var ns = this, uictrl = profile.boxing();
         }
         /*,
         // To determine how properties affects this module
