@@ -24,9 +24,9 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image9")
                 .setLeft("7.619047619047619em")
-                .setTop("9.142857142857142em")
-                .setWidth("10.971428571428572em")
-                .setHeight("9.447619047619048em")
+                .setTop("8.380952380952381em")
+                .setWidth("14.780952380952382em")
+                .setHeight("10.971428571428572em")
                 .setSrc("{/}img/scratch cat icon scratch cat.png")
             );
             
