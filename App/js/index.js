@@ -28,6 +28,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("3.0476190476190474em")
                 .setWidth("51.12380952380953em")
                 .setHeight("26.742857142857144em")
+                .setZIndex(0)
                 .setCaption("Login to Scratch.io")
             );
             
