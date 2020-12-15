@@ -21,13 +21,85 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
+                xui.create("xui.UI.Panel")
+                .setHost(host,"xui_ui_panel5")
+                .setDock("none")
+                .setLeft("3.0476190476190474em")
+                .setTop("3.0476190476190474em")
+                .setWidth("51.12380952380953em")
+                .setHeight("26.742857142857144em")
+                .setCaption("Login to Scratch.io")
+            );
+            
+            host.xui_ui_panel5.append(
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image9")
-                .setLeft("7.619047619047619em")
-                .setTop("8.380952380952381em")
+                .setLeft("2.5904761904761906em")
+                .setTop("4.876190476190477em")
                 .setWidth("14.780952380952382em")
-                .setHeight("10.971428571428572em")
+                .setHeight("10.209523809523809em")
+                .setZIndex(1002)
                 .setSrc("{/}img/scratch cat icon scratch cat.png")
+            );
+            
+            host.xui_ui_panel5.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput17")
+                .setDirtyMark(false)
+                .setLeft("20.114285714285714em")
+                .setTop("13.257142857142858em")
+                .setWidth("24.076190476190476em")
+                .setLabelSize("8em")
+                .setLabelCaption("Birthdate")
+                .setType("date")
+            );
+            
+            host.xui_ui_panel5.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input7")
+                .setDirtyMark(false)
+                .setLeft("20.114285714285714em")
+                .setTop("10.971428571428572em")
+                .setWidth("24.076190476190476em")
+                .setLabelSize("8em")
+                .setLabelCaption("Password")
+                .setType("password")
+                .setValue("pwd")
+            );
+            
+            host.xui_ui_panel5.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input9")
+                .setDirtyMark(false)
+                .setLeft("20.114285714285714em")
+                .setTop("8.685714285714285em")
+                .setWidth("24.076190476190476em")
+                .setLabelSize("8em")
+                .setLabelCaption("Username")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button10")
+                .setDirtyMark(false)
+                .setLeft("51.04761904761905em")
+                .setTop("3.0476190476190474em")
+                .setWidth("2.9714285714285715em")
+                .setHeight("2.8190476190476192em")
+                .setCaption("X")
+                .onClick([
+                    {
+                        "desc":"Action 1",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            "you can't close this webpage!",
+                            "this is a test website because you can't close that."
+                        ],
+                        "method":"pop",
+                        "event":1
+                    }
+                ])
             );
             
             return children;
