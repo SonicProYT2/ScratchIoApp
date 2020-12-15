@@ -157,7 +157,7 @@ xui.Class('App.Editor', 'xui.Module',{
                 .setDirtyMark(false)
                 .setLeft("15.238095238095237em")
                 .setTop("31.238095238095237em")
-                .setCaption("3D Model Maker")
+                .setCaption("Scratchnapped")
                 .setImageClass("fa fa-lg fa-cubes")
             );
             
