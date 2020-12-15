@@ -88,6 +88,19 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("7.923809523809524em")
                 .setHeight("2.4380952380952383em")
                 .setCaption("Login/Signup")
+                .onClick([
+                    {
+                        "desc":"Action 1",
+                        "type":"page",
+                        "target":"App.Editor",
+                        "args":[true],
+                        "method":"switch",
+                        "okFlag":"_prompt_ok",
+                        "koFlag":"_prompt_cancel",
+                        "event":1
+                    },
+                    "_xui_ui_button14_onclick"
+                ])
             );
             
             host.xui_ui_panel5.append(
@@ -142,6 +155,17 @@ xui.Class('App', 'xui.Module',{
          * @param {Element.xui} src  id or Dom Element
         */
         _xui_ui_image13_ondblclick:function(profile, e, src){
+            var ns = this, uictrl = profile.boxing();
+        },
+        /**
+         * Fired when user click it
+         * @method onClick [xui.UI.Button event]
+         * @param {xui.UIProfile.} profile  The current control's profile object
+         * @param {Event} e , Dom event object
+         * @param {Element.xui} src  id or Dom Element
+         * @param {} value  Object
+        */
+        _xui_ui_button14_onclick:function(profile, e, src, value){
             var ns = this, uictrl = profile.boxing();
         }
         /*,
