@@ -78,6 +78,26 @@ xui.Class('App', 'xui.Module',{
                 .setLabelCaption("Username")
             );
             
+            host.xui_ui_panel5.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button14")
+                .setDirtyMark(false)
+                .setLeft("31.61904761904762em")
+                .setTop("17.142857142857142em")
+                .setWidth("7.923809523809524em")
+                .setHeight("2.4380952380952383em")
+                .setCaption("Login/Signup")
+            );
+            
+            host.xui_ui_panel5.append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image13")
+                .setLeft("20.571428571428573em")
+                .setTop("3.8095238095238093em")
+                .setWidth("25.752380952380953em")
+                .setSrc("{/}img/costume2 (14).png")
+            );
+            
             append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button10")
