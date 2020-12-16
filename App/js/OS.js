@@ -19,7 +19,17 @@ xui.Class('App.OS', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image28")
+                .setLeft("0em")
+                .setTop("41.142857142857146em")
+                .setWidth("5.6380952380952385em")
+                .setHeight("4.114285714285714em")
+                .setSrc("{/}img/scratch cat icon smash bros 2.png")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
