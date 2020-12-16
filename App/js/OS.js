@@ -24,9 +24,9 @@ xui.Class('App.OS', 'xui.Module',{
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image28")
                 .setLeft("0em")
-                .setTop("41.142857142857146em")
-                .setWidth("5.6380952380952385em")
-                .setHeight("4.114285714285714em")
+                .setTop("40.38095238095238em")
+                .setWidth("4.876190476190477em")
+                .setHeight("4.876190476190477em")
                 .setSrc("{/}img/scratch cat icon smash bros 2.png")
             );
             
